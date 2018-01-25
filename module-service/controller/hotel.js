@@ -7,6 +7,7 @@ var helper = require('../core/helper');
 var auth = require('./auth');
 
 class HotelController {
+
     store(request, response, requestBody) {
         auth.guard(request, 'ADMIN', (error, results) => {
             if (error) httpMsg.status422(request, response, error);

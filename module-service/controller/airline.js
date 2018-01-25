@@ -7,6 +7,7 @@ var helper = require('../core/helper');
 var auth = require('../controller/auth');
 
 class AirlineController {
+
     storeAirlineCompany(request, response, requestBody) {
 
         auth.guard(request, 'ADMIN', (error, results) => {
